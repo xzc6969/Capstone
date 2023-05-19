@@ -1,3 +1,6 @@
+*{
+  font-family: 'Jost', sans-serif;
+}
 .logo {
   display: block;
   text-decoration: none;
@@ -6,35 +9,56 @@
   font-weight: 600;
   opacity: 0.9;
 }
-li{
+li {
   list-style-type: none;
 }
-a, a:hover{
+a,a:hover {
   text-decoration: none;
 }
-.header {
+header.main-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   transition: all 0.3s ease 0s;
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+  height: 100px;
+  display: grid;
+  align-items: center;
+  z-index: 10;
+  padding: 0;
+}
+header.nav-fixed {
+  padding: 0px;
+  background-color: #fff;
+  height: 80px;
+  border-bottom: none;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+.nav-fixed .navbar-expand-lg .navbar-brand {
+  color: #3f3a64;
+}
+.nav-fixed .navbar-expand-lg .navbar-nav li.nav-item.active .nav-link {
+  color: #009f4d !important;
+  opacity: 0.9;
+}
+.nav-fixed .navbar-expand-lg .navbar-nav .nav-link {
+  color: #3f3a64 !important;
+  opacity: 0.7;
+}
+.nav-fixed .material-symbols-outlined {
+  color: #3f3a64;
 }
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-/* .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-/* .sticky + .content {
-    padding-top: 102px;
-  }
-  h1 {
-    font-size: 32px;
-  } */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+h1 {
+  font-size: 32px;
+}
 
 .navbar-brand .fa-solid,
 .fas {
@@ -131,36 +155,36 @@ body.search-active .search-input {
   position: relative;
 }
 .carousel-item {
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 800px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 800px;
 }
 .carousel-item:nth-child(1) {
-    background-image: url(../image/b1.jpg);
+  background-image: url(../image/b1.jpg);
 }
 .carousel-item:nth-child(2) {
-    background-image: url(../image/b2.jpg);
+  background-image: url(../image/b2.jpg);
 }
 .carousel-item:nth-child(3) {
-    background-image: url(../image/b3.jpg);
+  background-image: url(../image/b3.jpg);
 }
 .carousel-item:nth-child(4) {
   background-image: url(../image/b4.jpg);
 }
-.carousel-caption{
+.carousel-caption {
   width: 800px;
   text-align: left;
   width: 1100px;
   top: 50%;
   transform: translateY(-50%);
 }
-.carousel-caption h1{
+.carousel-caption h1 {
   font-size: 65px;
   font-weight: 700;
   margin-bottom: 20px;
 }
-.carousel-caption p{
+.carousel-caption p {
   font-size: 18px;
   font-weight: 600;
   color: #fff;
@@ -168,7 +192,40 @@ body.search-active .search-input {
   margin-bottom: 20px;
   line-height: 2;
 }
-.overlay{
+.carousel-control-prev .prev,
+.carousel-control-next .next {
+  position: absolute;
+  right: 25px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+    rgba(71, 63, 79, 0.16) 0px 5px 10px;
+  color: #3f3a64;
+  font-weight: 700;
+}
+.carousel-control-prev {
+  right: 95px;
+  left: auto;
+  width: auto;
+  opacity: 1;
+  z-index: 10;
+}
+.carousel-control-next {
+  right: 25px;
+  width: auto;
+  opacity: 1;
+  z-index: 10;
+}
+.carousel-control-prev .prev:hover,
+.carousel-control-next .next:hover {
+  text-decoration: none;
+}
+.overlay {
   background: rgb(29 42 55 / 70%);
   position: absolute;
   left: 0;
@@ -177,7 +234,7 @@ body.search-active .search-input {
   height: 100%;
   transition: all 0.5s;
 }
-.carousel-caption button{
+.carousel-caption button {
   padding: 12px 40px;
   border: 1px solid #009f4d;
   border-radius: 10px;
@@ -185,10 +242,23 @@ body.search-active .search-input {
   color: #fff;
   font-weight: 600;
 }
-.carousel-inner{
+.carousel-inner {
   height: 800px;
 }
-.aboutUs-left{
+.shape{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1 ;
+}
+.shape svg{
+  width: 100%;
+}
+.shape path{
+  fill: #fff;
+}
+.aboutUs-left {
   padding: 0;
 }
 .aboutUs-left .title {
@@ -198,58 +268,58 @@ body.search-active .search-input {
   line-height: 30px;
   display: block;
 }
-.aboutUs-left h3{
+.aboutUs-left h3 {
   font-size: 35px;
   font-weight: 700;
   line-height: 40px;
   color: #3f3a64;
 }
-.aboutUs-left p{
+.aboutUs-left p {
   color: #666;
   font-weight: 400;
   opacity: 0.8;
 }
-.aboutUs-left ul{
+.aboutUs-left ul {
   padding-left: 0;
 }
-.aboutUs-left li{
+.aboutUs-left li {
   margin-bottom: 15px;
   display: block;
 }
-.aboutUs-left ul li a{
+.aboutUs-left ul li a {
   font-size: 18px;
   font-weight: 600;
   line-height: 1.5rem;
   color: #3f3a64;
   position: relative;
 }
-.aboutUs-right img{
+.aboutUs-right img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
-.feature{
+.feature {
   background-color: #f7f7f7;
 }
-.feature-left .title{
+.feature-left .title {
   font-size: 14px;
   font-weight: 600;
   color: #7e7d7d;
   line-height: 30px;
   display: block;
 }
-.feature-left h3{
+.feature-left h3 {
   font-size: 35px;
   font-weight: 700;
   line-height: 40px;
   color: #3f3a64;
 }
-.feature-left p{
+.feature-left p {
   color: #666;
   font-weight: 400;
   opacity: 0.8;
 }
-.feature-left .btn-style{
+.feature-left .btn-style {
   background-color: #009f4d;
   border-color: #009f4d;
   color: #fff;
@@ -257,18 +327,17 @@ body.search-active .search-input {
   padding: 12px 40px;
   border-radius: 10px;
   transition: all 0.5s;
-  
 }
-.feature-left a:hover{
+.feature-left a:hover {
   background-color: #008030;
-  border-color: #009f4d ;
+  border-color: #009f4d;
 }
 .feature-img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 25px;
 }
-.feature-item{
+.feature-item {
   text-align: center;
   padding: 30px 40px;
   background-color: #fff;
@@ -276,73 +345,183 @@ body.search-active .search-input {
   border-radius: 10px;
   transition: all 0.3s;
 }
-.feature-img .icon img{
+.feature-img .icon img {
   width: 65px;
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.feature-item:hover{
-  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px, rgba(71, 63, 79, 0.16) 0px 5px 10px;
+.feature-item:hover {
+  box-shadow: rgba(46, 41, 51, 0.08) 0px 2px 4px,
+    rgba(71, 63, 79, 0.16) 0px 5px 10px;
   transform: translateY(-5px);
 }
-.feature-item h4{
+.feature-item h4 {
   color: #3f3a64;
   font-size: 20px;
   font-weight: 700;
   transition: all 0.3s;
 }
-.feature-item h4:hover{
+.feature-item h4:hover {
   cursor: pointer;
   color: #009f4d;
 }
-.services .title{
+.services .title {
   font-weight: 600;
 }
-.blog-info{
+.blog-info {
   text-align: center !important;
 }
-.blog-title{
- font-size: 19px;
- font-weight: 600;
- padding: 12px 40px;
- color: #3f3a64;
- background-color: #fff;
- border-radius: 10px;
- display: inline-block;
- box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
- transform: translateY(-25px);
- transition: all 0.4s;
+.blog-title {
+  font-size: 19px;
+  font-weight: 600;
+  padding: 12px 40px;
+  color: #3f3a64;
+  background-color: #fff;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: rgba(1, 1, 1, 0.05) 1px 1px 5px 0px;
+  transform: translateY(-25px);
+  transition: all 0.4s;
 }
 
-.services .info img{
+.services .info img {
   width: 100%;
-  border-top-left-radius:10px ;
-  border-top-right-radius:10px ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.blog-info p{
+.blog-info p {
   color: #7e7d7d;
   font-weight: 600;
   margin-top: -10px;
   margin-left: 20px;
 }
-.info{
+.info {
   text-align: center !important;
 }
-.services .info a.btn{
+.services .info a.btn {
   padding: 12px 35px;
   border-radius: 10px;
   font-size: 16px;
   font-weight: 700;
-  background-color:transparent;
+  background-color: transparent;
   border-color: transparent;
   color: #3f3a64;
   transition: all 0.4s ease-in-out;
 }
-.blog-title:hover{
+.blog-title:hover {
   color: #009f4d;
 }
-.learnmore:hover{
+.learnmore:hover {
   color: #009f4d !important;
 }
+.gallery .small-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7e7d7d;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.gallery {
+  background-color: #f8f9fa;
+}
+.gallery .big-title {
+  line-height: 45px;
+  font-size: 35px;
+  font-weight: 700;
+  color: #3f3a64;
+}
+.zoom {
+  overflow: hidden;
+  position: relative;
+}
+.img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(29 42 55 / 70%);
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.gallery-content a.zoom:hover img{
+  transform: scale(1.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.hover-content {
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  visibility: hidden;
+  opacity: 0;
+  color: #fff;
+  z-index: 1;
+  padding: 45px 50px;
+  transition: all 0.5s;
+}
+.hover-content .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  color: white;
+}
+.hover-content .content {
+  font-size: 18px;
+  color: #eee;
+  display: block;
+  font-weight: 500;
+}
+.lb-nav a.lb-prev {
+  background: url(../image/img-sprite.png) 40px 48% no-repeat;
+  width: 5em;
+}
 
+.lb-nav a.lb-next {
+  background: url(../image/img-sprite.png) -23px 48% no-repeat;
+  width: 5em;
+}
+.lb-data .lb-caption {
+  font-size: 16px;
+  line-height: 1.8rem;
+  color: #fff;
+  font-weight: 600;
+}
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-top: 1rem;
+  font-size: 1rem;
+  color: #009f4d;
+}
+.lb-data .lb-close {
+  background: url(../image/close.png);
+}
+.lb-data .lb-close,
+.lb-data .lb-details {
+  margin-top: 15px;
+}
+.gallery a.zoom:hover .img-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+.gallery a.zoom:hover .hover-content {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+.company-logos {
+  border-top: 1px solid #eee;
+}
+.company-logos img {
+  width: 100%;
+  height: auto;
+}
