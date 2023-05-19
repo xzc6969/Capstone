@@ -366,10 +366,11 @@ body.search-active .search-input {
 }
 .feature-item h4:hover {
   cursor: pointer;
-  color: #009f4d;
+  color: #009f4d !important;
 }
 .services .title {
   font-weight: 600;
+  color: #3f3a64;
 }
 .blog-info {
   text-align: center !important;
@@ -412,7 +413,7 @@ body.search-active .search-input {
   transition: all 0.4s ease-in-out;
 }
 .blog-title:hover {
-  color: #009f4d;
+  color: #009f4d !important;
 }
 .learnmore:hover {
   color: #009f4d !important;

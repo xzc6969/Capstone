@@ -1,0 +1,76 @@
+body.dark{
+    background-color: #151421;
+}
+body.dark p{
+    color: #c2c2c2;
+}
+body.dark .aboutUs-left p{
+    color: #c2c2c2;
+}
+body.dark .feature-left p{
+    color: #c2c2c2;
+}
+body.dark .nav-fixed .navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff !important;
+    opacity: 0.7;
+}
+body.dark .overlay{
+    background: rgb(29 42 55 / 80%);
+}
+body.dark header.nav-fixed {
+    background-color: #151421;
+}
+body.dark .nav-fixed .navbar-expand-lg .navbar-brand{
+    color: #eee;
+}
+body.dark .nav-fixed .material-symbols-outlined{
+    color: #d9d9da;
+}
+body.dark .shape path{
+    fill: #151421;
+}
+body.dark .carousel-control-prev .prev,
+body.dark .carousel-control-next .next {
+    border: 1px solid #44434d;
+    background-color: #151421;
+    color: #eee;
+}
+body.dark .aboutUs-left h3{
+    color: #fff;
+}
+body.dark .aboutUs-left ul li a {
+    color: #fff;
+}
+body.dark .feature{
+    background-color: #100f19;
+}
+body.dark .feature-left h3{
+    color: #fff;
+}
+body.dark .feature-item{
+    background-color: #151421;
+}
+body.dark .feature-item h4{
+    color: #eee;
+}
+body.dark .services .title{
+    color: #fff;
+}
+body.dark .blog-title{
+    color: #eee;
+    background-color: #151421;
+    border: 1px solid #44434d;
+}
+body.dark .services .info a.btn{
+    color: #eee;
+}
+body.dark .gallery{
+    background-color: #100f19;
+
+}
+body.dark .gallery .big-title{
+    color: #fff;
+}
+body.dark .company-logos{
+    border-top: 1px solid #44434d;
+}
