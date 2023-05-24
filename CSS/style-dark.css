@@ -1,76 +1,80 @@
-body.dark{
+body.dark-theme{
     background-color: #151421;
 }
-body.dark p{
+body.dark-theme p{
     color: #c2c2c2;
 }
-body.dark .aboutUs-left p{
+body.dark-theme .aboutUs-left p{
     color: #c2c2c2;
 }
-body.dark .feature-left p{
+body.dark-theme .feature-left p{
     color: #c2c2c2;
 }
-body.dark .nav-fixed .navbar-expand-lg .navbar-nav .nav-link{
+body.dark-theme #switch-mode{
+    color: #eeeeee;
+    font-size: 2rem;
+}
+body.dark-theme .nav-fixed .navbar-expand-lg .navbar-nav .nav-link{
     color: #fff !important;
     opacity: 0.7;
 }
-body.dark .overlay{
+body.dark-theme .overlay{
     background: rgb(29 42 55 / 80%);
 }
-body.dark header.nav-fixed {
+body.dark-theme header.nav-fixed {
     background-color: #151421;
 }
-body.dark .nav-fixed .navbar-expand-lg .navbar-brand{
+body.dark-theme .nav-fixed .navbar-expand-lg .navbar-brand{
     color: #eee;
 }
-body.dark .nav-fixed .material-symbols-outlined{
+body.dark-theme .nav-fixed #switch-mode{
     color: #d9d9da;
 }
-body.dark .shape path{
+body.dark-theme .shape path{
     fill: #151421;
 }
-body.dark .carousel-control-prev .prev,
-body.dark .carousel-control-next .next {
+body.dark-theme .carousel-control-prev .prev,
+body.dark-theme .carousel-control-next .next {
     border: 1px solid #44434d;
     background-color: #151421;
     color: #eee;
 }
-body.dark .aboutUs-left h3{
+body.dark-theme .aboutUs-left h3{
     color: #fff;
 }
-body.dark .aboutUs-left ul li a {
+body.dark-theme .aboutUs-left ul li a {
     color: #fff;
 }
-body.dark .feature{
+body.dark-theme .feature{
     background-color: #100f19;
 }
-body.dark .feature-left h3{
+body.dark-theme .feature-left h3{
     color: #fff;
 }
-body.dark .feature-item{
+body.dark-theme .feature-item{
     background-color: #151421;
 }
-body.dark .feature-item h4{
+body.dark-theme .feature-item h4{
     color: #eee;
 }
-body.dark .services .title{
+body.dark-theme .services .title{
     color: #fff;
 }
-body.dark .blog-title{
+body.dark-theme .blog-title{
     color: #eee;
     background-color: #151421;
     border: 1px solid #44434d;
 }
-body.dark .services .info a.btn{
+body.dark-theme .services .info a.btn{
     color: #eee;
 }
-body.dark .gallery{
+body.dark-theme .gallery{
     background-color: #100f19;
 
 }
-body.dark .gallery .big-title{
+body.dark-theme .gallery .big-title{
     color: #fff;
 }
-body.dark .company-logos{
+body.dark-theme .company-logos{
     border-top: 1px solid #44434d;
 }
