@@ -31,6 +31,7 @@ header.nav-fixed {
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
+
 .nav-fixed .navbar-expand-lg .navbar-brand {
   color: #3f3a64;
 }
@@ -42,16 +43,16 @@ header.nav-fixed {
   color: #3f3a64 !important;
   opacity: 0.7;
 }
-.nav-fixed .material-symbols-outlined {
+.nav-fixed .la-moon {
   color: #3f3a64;
 }
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 102px;
@@ -59,7 +60,6 @@ header.nav-fixed {
 h1 {
   font-size: 32px;
 }
-
 .navbar-brand .fa-solid,
 .fas {
   color: #009f4d;
@@ -147,9 +147,9 @@ body.search-active .search-input {
   color: #fff;
   opacity: 0.9;
 }
-.material-symbols-outlined {
+.la-moon {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 2rem;
   cursor: context-menu;
 }
 .banner {
@@ -487,7 +487,6 @@ body.search-active .search-input {
   background: url(../image/img-sprite.png) 40px 48% no-repeat;
   width: 5em;
 }
-
 .lb-nav a.lb-next {
   background: url(../image/img-sprite.png) -23px 48% no-repeat;
   width: 5em;
