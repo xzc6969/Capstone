@@ -823,6 +823,10 @@ body.search-active .search-input {
   font-weight: 600;
   color: #3f3a64;
   margin-top: 10px;
+  transition: all .5s;
+}
+.blog .blog__desc:hover{
+  color: #009f4d;
 }
 .blog .card__author {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -830,6 +834,9 @@ body.search-active .search-input {
   grid-template-columns: auto 1fr auto;
   grid-gap: 10px;
   align-items: center;
+}
+.blog .card__author .card__post img {
+  border-radius: 50%;
 }
 .blog .card__author ul {
   padding: 0;
@@ -840,6 +847,9 @@ body.search-active .search-input {
   color: #3f3a64;
   font-weight: 600;
   line-height: 26px;
+}
+.blog .card__author ul li a:hover{
+  color: #009f4d ;
 }
 .blog .card__author ul li span {
   color: #666;
@@ -913,6 +923,13 @@ body.search-active .search-input {
   font-size: 16px;
   background-color: #00a63f;
   border-color: #00a63f;
+  transition: all .5s;
+  font-weight: 600;
+}
+.subscribe .subcribe__btn:hover{
+  /* color: #fff; */
+  background-color: #008030;
+  border-color: #00732c;
 }
 /* FOOTER */
 footer {
@@ -1033,19 +1050,17 @@ footer i {
   bottom: 20px;
   right: 20px;
   z-index: 99;
-  
-  font-size: 18px;
   border: none;
   outline: none;
   cursor: pointer;
   color: #fff;
+  font-size: 18px;
   width: 50px;
-  height: 50px;
+  height: 50px ;
   text-align: center;
   line-height: 50px;
   background: #009f4d;
   padding: 0;
-  line-height: 36px;
   border-radius: 35px;
   transition: 0.3s ease-out;
   visibility: visible;

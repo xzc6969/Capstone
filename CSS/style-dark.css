@@ -78,3 +78,41 @@ body.dark-theme .gallery .big-title{
 body.dark-theme .company-logos{
     border-top: 1px solid #44434d;
 }
+/* PART II */
+body.dark-theme .corpProgress .progress__info .progress__title {
+    color: #eee;
+}
+body.dark-theme .corpProgress .progress-height{
+    background-color: #151421;
+
+}
+body.dark-theme .feedback{
+    background-color: #100f19;
+}
+body.dark-theme .feedback .fb__contain .fb__des .fb__name h3{
+    color: #eee;
+} 
+body.dark-theme .owl-theme .owl-dots .owl-dot span{
+    background-color: #19213e;
+}
+body.dark-theme .blog__desc{
+    color: #eee;
+}
+body.dark-theme .blog .card-body, body.dark-theme .blog .card-footer{
+    background-color: #151421;
+}
+body.dark-theme .card__author ul li a{
+    color: #eee;
+
+}
+body.dark-theme .titleBottom{
+    color: #eee;
+}
+
+body.dark-theme .subscribe P{
+    color: #eee;
+}
+
+body.dark-theme .footer__cover p{
+    color: #97a1a9;
+}
